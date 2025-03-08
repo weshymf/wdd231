@@ -1,0 +1,71 @@
+@media (min-width: 768px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        /* White background for the body */
+        color: #333;
+        /* Dark text for readability */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0 15px;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    main {
+        background-color: #ffffff;
+        /* White background for the main content */
+        color: #333;
+        /* Dark text color */
+    }
+
+    header,
+    footer {
+        background-color: #0066cc;
+        /* Professional blue color */
+        color: white;
+        /* White text */
+    }
+
+    /* Button styles */
+    button {
+        background-color: #66b3ff;
+        /* Lighter blue background */
+        color: white;
+        /* White text for contrast */
+        border: none;
+        /* Remove the default border */
+        padding: 8px 16px;
+        /* Smaller padding for a more compact button */
+        font-size: 14px;
+        /* Smaller font size */
+        cursor: pointer;
+        /* Change the cursor to indicate it's clickable */
+        border-radius: 5px;
+        /* Slightly rounded corners */
+        transition: background-color 0.3s ease;
+        /* Smooth transition on hover */
+    }
+
+    button:hover {
+        background-color: #3399ff;
+        /* Slightly darker blue on hover */
+    }
+
+    button:focus {
+        outline: none;
+        /* Remove the focus outline */
+        box-shadow: 0 0 5px #3399ff;
+        /* Add a subtle blue glow on focus */
+    }
+}
