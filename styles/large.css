@@ -1,71 +1,135 @@
-@media (min-width: 768px) {
-    body {
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: #ffffff;
-        /* White background for the body */
-        color: #333;
-        /* Dark text for readability */
+/* Large.css - Styles for larger screens */
+
+/* Google Fonts Integration (ensure fonts are loaded on all devices) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #9a80e9;
+    /* Primary color */
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #140c2c;
+    /* Secondary color */
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+button {
+    background-color: #9a80e9;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 8px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7a61c0;
+    /* Lighter purple */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #140c2c;
+    /* Secondary color */
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+/* Responsive Layout for Larger Screens */
+@media (min-width: 1024px) {
+
+    /* Make header image larger on bigger screens */
+    header img {
+        width: 150px;
     }
 
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 0 15px;
-    }
-
-    #menu-toggle {
-        display: none;
-    }
-
+    /* Adjust main section padding */
     main {
-        background-color: #ffffff;
-        /* White background for the main content */
-        color: #333;
-        /* Dark text color */
+        padding: 50px;
     }
 
-    header,
-    footer {
-        background-color: #0066cc;
-        /* Professional blue color */
-        color: white;
-        /* White text */
-    }
-
-    /* Button styles */
+    /* Increase button size on larger screens */
     button {
-        background-color: #66b3ff;
-        /* Lighter blue background */
-        color: white;
-        /* White text for contrast */
-        border: none;
-        /* Remove the default border */
-        padding: 8px 16px;
-        /* Smaller padding for a more compact button */
-        font-size: 14px;
-        /* Smaller font size */
-        cursor: pointer;
-        /* Change the cursor to indicate it's clickable */
-        border-radius: 5px;
-        /* Slightly rounded corners */
-        transition: background-color 0.3s ease;
-        /* Smooth transition on hover */
+        padding: 15px 20px;
+        font-size: 1.2rem;
     }
 
-    button:hover {
-        background-color: #3399ff;
-        /* Slightly darker blue on hover */
-    }
-
-    button:focus {
-        outline: none;
-        /* Remove the focus outline */
-        box-shadow: 0 0 5px #3399ff;
-        /* Add a subtle blue glow on focus */
+    /* Improve layout for larger devices */
+    section {
+        margin-bottom: 40px;
     }
 }
