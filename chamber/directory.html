@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of chamber members - WDD231 Project">
+    <meta name="author" content="Wesley Ferreira">
+    <title>Chamber Member Directory</title>
+
+    <!-- Favicon named as `dir` from `directory` -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon-16x16.png" type="dir/png1">
+    <link rel="icon" href="images/android-chrome-192x192.png" type="dir/png2">
+    <link rel="icon" href="images/favicon-32x32.png" type="dir/png3">
+    <link rel="icon" href="images/android-chrome-512x512.png" type="dir/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+
+    <!-- Open Graph Meta Tags (Facebook) -->
+    <meta property="og:title" content="Chamber Member Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/weshymf/wdd231/chamber/images/android-chrome-512x512.png">
+    <meta property="og:url" content="https://github.com/weshymf/wdd231/chamber/directory.html">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font Embed -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script> <!-- Added this script -->
+</head>
+
+<body>
+    <header>
+        <h1>Chamber Member Directory</h1>
+    </header>
+    <nav>
+        <button id="menu-toggle">☰</button>
+        <ul id="menu">
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="directory.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://www.linkedin.com/in/wesley-data/" target="_blank" rel="noopener noreferrer">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Our Members</h2>
+        <button id="grid-view">Grid View</button>
+        <button id="list-view">List View</button>
+        <section id="members-container" class="grid-view">
+            <div class="member-card">
+                <h3>Company One</h3>
+                <p><strong>Address:</strong> 123 Main St, City, Country</p>
+                <p><strong>Phone:</strong> +1234567890</p>
+                <p><strong>Website:</strong> <a href="https://companyone.com" target="_blank">companyone.com</a></p>
+                <p><strong class="membership-level">Membership Level:</strong> Member</p>
+                <p class="member-since"><strong>Member since:</strong> 2020</p>
+            </div>
+
+            <div class="member-card">
+                <h3>Company Two</h3>
+                <p><strong>Address:</strong> 456 Oak Rd, City, Country</p>
+                <p><strong>Phone:</strong> +1987654321</p>
+                <p><strong>Website:</strong> <a href="https://companytwo.com" target="_blank">companytwo.com</a></p>
+                <p><strong class="membership-level">Membership Level:</strong> Silver</p>
+                <p class="member-since"><strong>Member since:</strong> 2019</p>
+            </div>
+
+            <div class="member-card">
+                <h3>Company Three</h3>
+                <p><strong>Address:</strong> 789 Pine Ave, City, Country</p>
+                <p><strong>Phone:</strong> +1122334455</p>
+                <p><strong>Website:</strong> <a href="https://companythree.com" target="_blank">companythree.com</a></p>
+                <p><strong class="membership-level">Membership Level:</strong> Gold</p>
+                <p class="member-since"><strong>Member since:</strong> 2018</p>
+            </div>
+
+            <div class="member-card">
+                <h3>Company Four</h3>
+                <p><strong>Address:</strong> 321 Birch Blvd, City, Country</p>
+                <p><strong>Phone:</strong> +1223344556</p>
+                <p><strong>Website:</strong> <a href="https://companyfour.com" target="_blank">companyfour.com</a></p>
+                <p><strong class="membership-level">Membership Level:</strong> Member</p>
+                <p class="member-since"><strong>Member since:</strong> 2021</p>
+            </div>
+
+            <div class="member-card">
+                <h3>Company Five</h3>
+                <p><strong>Address:</strong> 654 Maple Dr, City, Country</p>
+                <p><strong>Phone:</strong> +1555443322</p>
+                <p><strong>Website:</strong> <a href="https://companyfive.com" target="_blank">companyfive.com</a></p>
+                <p><strong class="membership-level">Membership Level:</strong> Silver</p>
+                <p class="member-since"><strong>Member since:</strong> 2017</p>
+            </div>
+
+            <div class="member-card">
+                <h3>Company Six</h3>
+                <p><strong>Address:</strong> 987 Cedar Ln, City, Country</p>
+                <p><strong>Phone:</strong> +1777888999</p>
+                <p><strong>Website:</strong> <a href="https://companysix.com" target="_blank">companysix.com</a></p>
+                <p><strong class="membership-level">Membership Level:</strong> Gold</p>
+                <p class="member-since"><strong>Member since:</strong> 2015</p>
+            </div>
+
+            <div class="member-card">
+                <h3>Company Seven</h3>
+                <p><strong>Address:</strong> 159 Elm St, City, Country</p>
+                <p><strong>Phone:</strong> +1444556677</p>
+                <p><strong>Website:</strong> <a href="https://companyseven.com" target="_blank">companyseven.com</a></p>
+                <p><strong class="membership-level">Membership Level:</strong> Member</p>
+                <p class="member-since"><strong>Member since:</strong> 2022</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Wesley Ferreira - WDD231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

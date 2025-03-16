@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Company One",
+        "address": "123 Main St, City, Country",
+        "phone": "+1234567890",
+        "website": "https://companyone.com",
+        "image": "companyone.jpg",
+        "membership_level": 1,
+        "info": "Member since 2020"
+    },
+    {
+        "name": "Company Two",
+        "address": "456 Oak Rd, City, Country",
+        "phone": "+1987654321",
+        "website": "https://companytwo.com",
+        "image": "companytwo.jpg",
+        "membership_level": 2,
+        "info": "Member since 2019"
+    },
+    {
+        "name": "Company Three",
+        "address": "789 Pine Ave, City, Country",
+        "phone": "+1122334455",
+        "website": "https://companythree.com",
+        "image": "companythree.jpg",
+        "membership_level": 3,
+        "info": "Member since 2018"
+    },
+    {
+        "name": "Company Four",
+        "address": "321 Birch Blvd, City, Country",
+        "phone": "+1223344556",
+        "website": "https://companyfour.com",
+        "image": "companyfour.jpg",
+        "membership_level": 1,
+        "info": "Member since 2021"
+    },
+    {
+        "name": "Company Five",
+        "address": "654 Maple Dr, City, Country",
+        "phone": "+1555443322",
+        "website": "https://companyfive.com",
+        "image": "companyfive.jpg",
+        "membership_level": 2,
+        "info": "Member since 2017"
+    },
+    {
+        "name": "Company Six",
+        "address": "987 Cedar Ln, City, Country",
+        "phone": "+1777888999",
+        "website": "https://companysix.com",
+        "image": "companysix.jpg",
+        "membership_level": 3,
+        "info": "Member since 2015"
+    },
+    {
+        "name": "Company Seven",
+        "address": "159 Elm St, City, Country",
+        "phone": "+1444556677",
+        "website": "https://companyseven.com",
+        "image": "companyseven.jpg",
+        "membership_level": 1,
+        "info": "Member since 2022"
+    }
+]
