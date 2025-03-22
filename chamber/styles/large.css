@@ -14,8 +14,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #9a80e9;
-    /* Primary color */
+    background-color: #9a80e9; /* Primary color */
     color: white;
     padding: 40px;
     text-align: center;
@@ -29,8 +28,7 @@ header img {
 
 /* Navigation Styling */
 nav {
-    background-color: #140c2c;
-    /* Secondary color */
+    background-color: #140c2c; /* Secondary color */
     color: white;
     padding: 15px 0;
 }
@@ -74,6 +72,57 @@ section {
     margin-bottom: 30px;
 }
 
+/* Spotlight Section Styling */
+#spotlight-section {
+    margin-bottom: 40px;
+}
+
+.spotlight-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.spotlight-card {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.spotlight-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.spotlight-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.spotlight-card .membership-level {
+    font-weight: bold;
+    color: #9a80e9;
+}
+
+.spotlight-card .contact-info a {
+    color: #9a80e9;
+    text-decoration: none;
+}
+
+.spotlight-card .contact-info a:hover {
+    text-decoration: underline;
+}
+
 /* Button Styling */
 button {
     background-color: #9a80e9;
@@ -88,14 +137,12 @@ button {
 }
 
 button:hover {
-    background-color: #7a61c0;
-    /* Lighter purple */
+    background-color: #7a61c0; /* Lighter purple */
 }
 
 /* Footer Styling */
 footer {
-    background-color: #140c2c;
-    /* Secondary color */
+    background-color: #140c2c; /* Secondary color */
     color: white;
     padding: 30px;
     text-align: center;
@@ -120,8 +167,7 @@ footer span {
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    /* Space between items */
+    margin-bottom: 20px; /* Space between items */
 }
 
 .member-card h3 {
@@ -138,8 +184,7 @@ footer span {
 
 .member-card .membership-level {
     font-weight: bold;
-    color: #9a80e9;
-    /* Primary color */
+    color: #9a80e9; /* Primary color */
 }
 
 .member-card .member-since {
@@ -189,8 +234,7 @@ footer span {
 
 .member-card .membership-level {
     font-weight: bold;
-    color: #9a80e9;
-    /* Primary color */
+    color: #9a80e9; /* Primary color */
 }
 
 .member-card .member-since {
@@ -213,7 +257,6 @@ footer span {
 
 /* Responsive Layout for Larger Screens */
 @media (min-width: 1024px) {
-
     /* Make header image larger on bigger screens */
     header img {
         width: 150px;

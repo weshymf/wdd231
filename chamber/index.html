@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Course home page for WDD231">
+    <meta name="description" content="Chamber of Commerce Home Page">
     <meta name="author" content="Wesley Ferreira">
-    <title>WDD231 Course Home</title>
+    <title>Chamber of Commerce Home</title>
 
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +15,18 @@
     <!-- Google Font Embed -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Normalize CSS to ensure consistent styling across browsers -->
     <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- Custom Stylesheets for Small and Large Screens -->
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/weather.js" defer></script> <!-- Weather Script for live data -->
+
 </head>
 
 <body>
@@ -31,41 +37,66 @@
         </picture>
         <span>Wesley Ferreira</span>
     </header>
+
     <nav>
         <button id="menu-toggle">☰</button>
         <ul id="menu">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="https://www.linkedin.com/in/wesley-data/" target="_blank"
                     rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
     </nav>
+
     <main>
-        <h1>WDD231 Course Home</h1> <!-- Updated h1 to match the page title -->
-
-        <section>
-            <h2>Introduction</h2>
-            <p>Welcome to the WDD231 course home page.</p>
+        <!-- Hero Image Section -->
+        <section id="hero-image">
+            <img src="images/hero.jpg" alt="Chamber of Commerce" width="100%" height="auto">
         </section>
 
-        <section>
-            <h2>Course Information</h2>
-            <div id="course-container"></div>
-            <button id="all-courses">All Courses</button>
-            <button id="wdd-courses">WDD Courses</button>
-            <button id="cse-courses">CSE Courses</button>
+        <!-- Call to Action Section -->
+        <section id="cta">
+            <h2>Join the Chamber</h2>
+            <p>Become a member today and start benefiting from all the advantages of being part of the Chamber of
+                Commerce.</p>
+            <a href="join.html" class="cta-button">Join Now</a>
         </section>
 
-        <section>
-            <h2>About Me</h2>
-            <p>Learn more about my background and projects related to web development and data analysis.</p>
+        <!-- Current Events Section -->
+        <section id="current-events">
+            <h2>Current Events</h2>
+            <p>Stay up to date with upcoming events and important announcements from the Chamber of Commerce.</p>
+            <ul>
+                <li><strong>Event 1:</strong> Annual Chamber Gala - Date: March 25, 2025</li>
+                <li><strong>Event 2:</strong> Networking Event - Date: April 10, 2025</li>
+                <li><strong>Event 3:</strong> Chamber Conference - Date: May 15, 2025</li>
+            </ul>
         </section>
+
+        <!-- Weather Section -->
+        <section id="weather-section">
+            <h2>Weather Information</h2>
+            <div id="weather-info">
+                <!-- Weather data will be injected here via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Spotlight Members Section -->
+        <section id="spotlight-members">
+            <h2>Spotlight Members</h2>
+            <div id="spotlight-cards">
+                <!-- Spotlight members' content will be injected here by JS -->
+            </div>
+        </section>
+
     </main>
+
     <footer>
         <p>&copy; <span id="currentyear"></span> Wesley Ferreira - Brazil</p>
         <p id="lastModified"></p>
     </footer>
+
 </body>
 
 </html>
