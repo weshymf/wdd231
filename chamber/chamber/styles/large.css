@@ -1,0 +1,180 @@
+/* General Styles for Desktop */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #140c2c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header picture img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+header span {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Hide the Hamburger Menu on Larger Screens */
+#menu-toggle {
+    display: none;
+}
+
+/* Navigation Menu Styles */
+nav {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #9a80e9;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#cta-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #140c2c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #9a80e9;
+}
+
+/* Current Events Section */
+#current-events {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#current-events ul {
+    padding-left: 20px;
+}
+
+#current-events ul li {
+    margin-bottom: 10px;
+}
+
+/* Weather Section */
+#weather-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Spotlight Members Section */
+#spotlight-members {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #140c2c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 1024px) {
+    /* Adjustments for screen sizes 1024px and above */
+    header {
+        padding: 30px 50px;
+    }
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    #cta-overlay {
+        padding: 30px;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+
+    #current-events, #weather-section, #spotlight-members {
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    nav ul {
+        gap: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}
