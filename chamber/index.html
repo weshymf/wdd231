@@ -25,17 +25,18 @@
     <!-- Google Font Embed -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Normalize CSS to ensure consistent styling across browsers -->
+    <!-- Normalize CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
 
-    <!-- Custom Stylesheets for Small and Large Screens -->
+    <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <!-- JavaScript files -->
+    <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script> <!-- Weather Script for live data -->
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script> <!-- Script para carregar Spotlight Members -->
 
 </head>
 
@@ -48,32 +49,29 @@
         <span>Wesley Ferreira</span>
     </header>
 
+    <!-- Navigation -->
     <nav>
-        <button id="menu-toggle">☰</button>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
         <ul id="menu">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="https://www.linkedin.com/in/wesley-data/" target="_blank"
-                    rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/wesley-data/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
     </nav>
 
     <main>
-        <!-- Hero Image Section -->
+        <!-- Hero Section with CTA -->
         <section id="hero-image">
             <img src="images/hero.jpg" alt="Chamber of Commerce" width="100%" height="auto">
+            <div id="cta-overlay">
+                <h2>Join the Chamber</h2>
+                <p>Become a member today and start benefiting from all the advantages of being part of the Chamber of Commerce.</p>
+                <a href="join.html" class="cta-button">Join Now</a>
+            </div>
         </section>
 
-        <!-- Call to Action Section -->
-        <section id="cta">
-            <h2>Join the Chamber</h2>
-            <p>Become a member today and start benefiting from all the advantages of being part of the Chamber of
-                Commerce.</p>
-            <a href="join.html" class="cta-button">Join Now</a>
-        </section>
-
-        <!-- Current Events Section -->
+        <!-- Current Events -->
         <section id="current-events">
             <h2>Current Events</h2>
             <p>Stay up to date with upcoming events and important announcements from the Chamber of Commerce.</p>
@@ -92,11 +90,11 @@
             </div>
         </section>
 
-        <!-- Spotlight Members Section -->
+        <!-- Spotlight Members -->
         <section id="spotlight-members">
             <h2>Spotlight Members</h2>
-            <div id="spotlight-cards">
-                <!-- Spotlight members' content will be injected here by JS -->
+            <div id="spotlight-cards" class="spotlight-container">
+                <!-- Spotlight members' content will be injected here via JavaScript -->
             </div>
         </section>
 

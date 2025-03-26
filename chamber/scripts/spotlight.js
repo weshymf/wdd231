@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Array of spotlight members (this can be fetched from a server or a file)
+    // Array of spotlight members
     const spotlightMembers = [
         {
             name: "John Doe",

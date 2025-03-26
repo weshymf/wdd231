@@ -8,12 +8,22 @@
     <meta name="author" content="Wesley Ferreira">
     <title>About - Chamber Project</title>
 
+    <!-- Open Graph Meta Tags (for better social sharing) -->
+    <meta property="og:title" content="About - Chamber Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Me.jpeg">
+    <meta property="og:url" content="https://weshymf.github.io/wdd231/chamber/about.html">
+
     <!-- Google Font Embed -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    
+    <!-- JavaScript Files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
@@ -21,14 +31,13 @@
 <body>
     <header>
         <picture>
-            <source srcset="images/Me.jpeg" type="image/jpeg">
-            <img src="images/Me.jpeg" alt="Profile Photo" loading="lazy" width="100" height="100">
+            <img src="images/Me.jpeg" alt="Profile photo of Wesley Ferreira, developer of this project" loading="lazy" width="100" height="100">
         </picture>
         <span>Wesley Ferreira</span>
     </header>
 
     <nav>
-        <button id="menu-toggle">☰</button>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
         <ul id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>

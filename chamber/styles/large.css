@@ -1,6 +1,6 @@
 /* Large.css - Styles for larger screens */
 
-/* Google Fonts Integration (ensure fonts are loaded on all devices) */
+/* Google Fonts Integration */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 /* Global Styles */
@@ -18,12 +18,21 @@ header {
     color: white;
     padding: 40px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header img {
     width: 120px;
     height: auto;
     border-radius: 50%;
+    margin-right: 15px;
+}
+
+header span {
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 /* Navigation Styling */
@@ -36,19 +45,24 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 20px;
+    gap: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 /* Main Content */
@@ -79,8 +93,9 @@ section {
 
 .spotlight-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .spotlight-card {
@@ -213,67 +228,21 @@ footer span {
     padding: 0;
 }
 
-.member-card {
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.member-card h3 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.member-card p {
-    color: #555;
-    font-size: 1rem;
-    margin: 5px 0;
-}
-
-.member-card .membership-level {
-    font-weight: bold;
-    color: #9a80e9; /* Primary color */
-}
-
-.member-card .member-since {
-    font-style: italic;
-    color: #888;
-}
-
-.member-card .contact-info {
-    margin-top: 15px;
-}
-
-.member-card .contact-info a {
-    color: #9a80e9;
-    text-decoration: none;
-}
-
-.member-card .contact-info a:hover {
-    text-decoration: underline;
-}
-
 /* Responsive Layout for Larger Screens */
 @media (min-width: 1024px) {
-    /* Make header image larger on bigger screens */
     header img {
         width: 150px;
     }
 
-    /* Adjust main section padding */
     main {
         padding: 50px;
     }
 
-    /* Increase button size on larger screens */
     button {
         padding: 15px 20px;
         font-size: 1.2rem;
     }
 
-    /* Improve layout for larger devices */
     section {
         margin-bottom: 40px;
     }
