@@ -34,13 +34,15 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    <script src="menu-toggle.js"></script>
+
 </head>
 
 <body>
     <header>
         <h1>Chamber Member Directory</h1>
     </header>
-    
+
     <!-- Navigation -->
     <nav>
         <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
@@ -48,19 +50,20 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="directory.html" class="active">Directory</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="https://www.linkedin.com/in/wesley-data/" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/wesley-data/" target="_blank" rel="noopener noreferrer">Contact</a>
+            </li>
         </ul>
     </nav>
-    
+
     <main>
         <h2>Our Members</h2>
-        
+
         <!-- View Mode Buttons -->
         <div class="view-buttons">
             <button id="grid-view" aria-label="Display in Grid View">Grid View</button>
             <button id="list-view" aria-label="Display in List View">List View</button>
         </div>
-        
+
         <!-- Members Section -->
         <section id="members-container" class="grid-view">
             <!-- Content dynamically inserted via JavaScript -->

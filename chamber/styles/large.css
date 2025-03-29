@@ -1,249 +1,180 @@
-/* Large.css - Styles for larger screens */
-
-/* Google Fonts Integration */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
-/* Global Styles */
+/* General Styles for Desktop */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Header Styling */
+/* Header Styles */
 header {
-    background-color: #9a80e9; /* Primary color */
+    background-color: #140c2c;
     color: white;
-    padding: 40px;
-    text-align: center;
+    padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-header img {
-    width: 120px;
-    height: auto;
+header picture img {
     border-radius: 50%;
-    margin-right: 15px;
+    width: 100px;
+    height: 100px;
 }
 
 header span {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin-left: 20px;
     font-weight: bold;
 }
 
-/* Navigation Styling */
+/* Hide the Hamburger Menu on Larger Screens */
+#menu-toggle {
+    display: none;
+}
+
+/* Navigation Menu Styles */
 nav {
-    background-color: #140c2c; /* Secondary color */
-    color: white;
-    padding: 15px 0;
+    display: block;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-weight: 500;
+    color: white;
+    font-weight: bold;
     padding: 10px 15px;
-    transition: background 0.3s;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
-/* Main Content */
+/* Main Section Styles */
 main {
-    padding: 40px;
-}
-
-main h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-main h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-/* Spotlight Section Styling */
-#spotlight-section {
-    margin-bottom: 40px;
-}
-
-.spotlight-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.spotlight-card {
-    width: 300px;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-.spotlight-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+/* Hero Section */
+.hero {
+    background-color: #9a80e9;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#cta-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #140c2c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #9a80e9;
+}
+
+/* Current Events Section */
+#current-events {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#current-events ul {
+    padding-left: 20px;
+}
+
+#current-events ul li {
     margin-bottom: 10px;
 }
 
-.spotlight-card h3 {
-    font-size: 1.5rem;
-    margin: 10px 0;
+/* Weather Section */
+#weather-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.spotlight-card p {
-    font-size: 1rem;
-    color: #555;
+/* Spotlight Members Section */
+#spotlight-members {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.spotlight-card .membership-level {
-    font-weight: bold;
-    color: #9a80e9;
-}
-
-.spotlight-card .contact-info a {
-    color: #9a80e9;
-    text-decoration: none;
-}
-
-.spotlight-card .contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Button Styling */
-button {
-    background-color: #9a80e9;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    margin: 8px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #7a61c0; /* Lighter purple */
-}
-
-/* Footer Styling */
+/* Footer Section */
 footer {
-    background-color: #140c2c; /* Secondary color */
+    background-color: #140c2c;
     color: white;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 
 footer p {
-    margin: 5px;
-}
-
-footer span {
-    font-weight: bold;
-}
-
-/* List View Layout */
-#members-container.list-view {
-    display: block;
-    padding: 0;
-}
-
-.member-card {
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Space between items */
-}
-
-.member-card h3 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.member-card p {
-    color: #555;
-    font-size: 1rem;
     margin: 5px 0;
 }
 
-.member-card .membership-level {
-    font-weight: bold;
-    color: #9a80e9; /* Primary color */
-}
-
-.member-card .member-since {
-    font-style: italic;
-    color: #888;
-}
-
-.member-card .contact-info {
-    margin-top: 15px;
-}
-
-.member-card .contact-info a {
-    color: #9a80e9;
-    text-decoration: none;
-}
-
-.member-card .contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Grid View Layout */
-#members-container.grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 0;
-}
-
-/* Responsive Layout for Larger Screens */
+/* Responsive adjustments for larger screens */
 @media (min-width: 1024px) {
-    header img {
-        width: 150px;
+    /* Adjustments for screen sizes 1024px and above */
+    header {
+        padding: 30px 50px;
     }
 
-    main {
-        padding: 50px;
+    .hero {
+        padding: 100px 20px;
     }
 
-    button {
-        padding: 15px 20px;
+    #cta-overlay {
+        padding: 30px;
+    }
+
+    .cta-button {
         font-size: 1.2rem;
+        padding: 15px 30px;
     }
 
-    section {
-        margin-bottom: 40px;
+    #current-events, #weather-section, #spotlight-members {
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    nav ul {
+        gap: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+
+    footer {
+        padding: 30px;
     }
 }
