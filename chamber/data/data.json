@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Central Plaza",
+      "image": "images/central-plaza.webp",
+      "address": "Palmeiras Av., Downtown, City X",
+      "description": "An ideal place for outdoor walks with well-maintained gardens and cultural events."
+    },
+    {
+      "name": "National History Museum",
+      "image": "images/museu-historico.webp",
+      "address": "150 Pioneers Street, City X",
+      "description": "Exhibitions about the region's history, ancient artifacts, and educational guided tours."
+    },
+    {
+      "name": "Water Park",
+      "image": "images/parque-aguas.webp",
+      "address": "Green Highway, km 12, City X",
+      "description": "An ecological park with trails, lakes, and picnic areas surrounded by nature."
+    },
+    {
+      "name": "Neo Quimica Arena",
+      "image": "images/estadio.webp",
+      "address": "Itaquera, Sao Paulo",
+      "description": "Main venue for the city's football matches, with a 10,000-person capacity."
+    },
+    {
+      "name": "Handicraft Market",
+      "image": "images/vero-peso.webp",
+      "address": "Liberty Square, Downtown, City X",
+      "description": "A variety of handmade local products and traditional food every weekend."
+    },
+    {
+      "name": "Sun Viewpoint",
+      "image": "images/mirante-sol.webp",
+      "address": "High Road, no number, City X",
+      "description": "Perfect panoramic view for photos and watching the sunset over the city."
+    },
+    {
+      "name": "Ana Maria's Colonial Café",
+      "image": "images/cafe-colonial.webp",
+      "address": "88 Hortensias Street, City X",
+      "description": "Cozy environment with a wide variety of homemade cakes, breads, and sweets."
+    },
+    {
+      "name": "Municipal Public Library",
+      "image": "images/biblioteca.webp",
+      "address": "300 Knowledge Avenue, City X",
+      "description": "A space with thousands of titles, reading and study areas, and literary events."
+    }
+  ]
+  
