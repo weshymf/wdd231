@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact or feedback form - Gaming Highlights project by Wesley Ferreira" />
+  <meta name="author" content="Wesley Ferreira" />
+  <meta property="og:title" content="Gaming Highlights Form" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/form-banner.jpg" />
+  <meta property="og:url" content="https://weshymf.github.io/wdd231/project/form.html" />
+  <title>Feedback Form - Gaming Highlights</title>
+
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/small.css"/>
+  <link rel="stylesheet" href="styles/large.css"/>
+  
+
+  <script src="scripts/menu-toggle.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div id="site-logo">
+        <img src="images/gaminglogo.png" alt="Gaming Logo" width="150" height="150">
+      </div>
+      
+    <h1>Feedback Form</h1>
+    <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+  </header>
+
+  <nav id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="year-2023.html">2023</a></li>
+      <li><a href="year-2024.html">2024</a></li>
+      <li><a href="year-2025.html">2025</a></li>
+      <li><a href="form.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>We'd love your feedback!</h2>
+      <p>Please fill out the form below to send us your comments or suggestions.</p>
+
+      <form action="thankyou.html" method="get">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required autocomplete="name" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+
+        <label for="favorite-game">Your Favorite Game (optional):</label>
+        <input type="text" id="favorite-game" name="favorite-game" />
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          Subscribe to updates
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Wesley Ferreira - Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

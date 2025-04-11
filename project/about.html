@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about Wesley Ferreira, the developer behind Gaming Highlights." />
+  <meta name="author" content="Wesley Ferreira" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="About - Gaming Highlights" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/me.jpeg" />
+  <meta property="og:url" content="https://weshymf.github.io/wdd231/project/about.html" />
+
+  <title>About - Gaming Highlights</title>
+
+  <!-- Styles -->
+  <link rel="icon" href="favicon.ico/favicon.ico" />
+  <link rel="stylesheet" href="styles/small.css"/>
+  <link rel="stylesheet" href="styles/large.css"/>
+  
+
+  <!-- JavaScript -->
+  <script src="scripts/menu-toggle.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <picture>
+      <source srcset="images/me.jpeg" type="image/jpeg" />
+      <img
+        src="images/me.jpeg"
+        alt="Profile photo of Wesley Ferreira, developer of this site" class="profile-image"
+      />
+    </picture>
+    <span>Wesley Ferreira</span>
+    <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+  </header>
+
+  <nav id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="year-2023.html">2023</a></li>
+      <li><a href="year-2024.html">2024</a></li>
+      <li><a href="year-2025.html">2025</a></li>
+      <li><a href="form.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>About Me & The Project</h1>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>Hello! I'm Wesley Ferreira, a passionate developer and data analyst based in Brazil. I created this project to merge two of my favorite interests: gaming and web development.</p>
+    </section>
+
+    <section>
+      <h2>Why Gaming?</h2>
+      <p>Gaming has always been a major part of my life. With constant innovations in storytelling, visuals, and mechanics, I wanted to spotlight the most impactful games of the past three years according to Metacritic. This website is my way of honoring that creativity while showcasing my development skills.</p>
+    </section>
+
+    <section>
+      <h2>Development Approach</h2>
+      <p>This site was built from scratch using HTML5, CSS3, and JavaScript. I focused on accessibility, responsiveness, and dynamic data integration to create a smooth user experience across all devices.</p>
+    </section>
+
+    <section>
+      <h2>About the Project</h2>
+      <p>The project features three detailed pages—one for each year—highlighting five standout games. Each entry includes development information, release details, critical reviews, and the reason for selection. It also includes dynamic JavaScript elements like modals, localStorage, and content built from JSON data.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Wesley Ferreira - Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
